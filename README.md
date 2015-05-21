@@ -7,9 +7,12 @@ Balls bouncing on the screen
 
 ![screenshot](https://raw.githubusercontent.com/asiletto/html5/master/bouncing-balls/screenshot.jpg)
 
-
 ## bouncing-balls-with-collision
 Balls bouncing on the screen and with each other
 
+![screenshot](https://raw.githubusercontent.com/asiletto/html5/master/bouncing-balls-with-collision/screenshot.jpg)
+
 ## mouse-following-ball
 Ball following the mouse
+
+![screenshot](https://raw.githubusercontent.com/asiletto/html5/master/mouse-following-ball/screenshot.jpg)
