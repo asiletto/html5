@@ -20,8 +20,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Main main = new Main();
-        main.run();
+    	new Main().run();
     }
 
     private void run() throws Exception {
@@ -36,11 +35,11 @@ public class Main {
 
         server.setConnectors(new Connector[]{http});
 
-        ResourceHandler resource_handler = new ResourceHandler();
-        resource_handler.setDirectoriesListed(true);
-        resource_handler.setWelcomeFiles(new String[]{ "index.html" });
+        ResourceHandler resourceHandler = new ResourceHandler();
+        resourceHandler.setDirectoriesListed(true);
+        resourceHandler.setWelcomeFiles(new String[]{ "index.html" });
 
-        resource_handler.setResourceBase(new File("src/main/webapp").getAbsolutePath());
+        resourceHandler.setResourceBase(new File("src/main/webapp").getAbsolutePath());
 
         ServletHolder atmosphereServletHolder = new ServletHolder(AtmosphereServlet.class);
 
@@ -53,9 +52,8 @@ public class Main {
         ServletContextHandler servletContextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);
         servletContextHandler.addServlet(atmosphereServletHolder, "/test-ws/*");
 
-
         HandlerList handlers = new HandlerList();
-        handlers.setHandlers(new Handler[] { resource_handler, servletContextHandler });
+        handlers.setHandlers(new Handler[] { resourceHandler, servletContextHandler });
 
         server.setHandler(handlers);
         server.setStopAtShutdown(true);
