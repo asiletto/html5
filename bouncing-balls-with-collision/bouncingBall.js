@@ -83,9 +83,14 @@ define(["jquery",], function($) {
 			)
 		);
 		
-		if (distance < this.radius + secondBall.radius){
+		if (distance <= this.radius + secondBall.radius){
 			this.inCollision = true;
 			if(this.alreadyCollided == false && secondBall.alreadyCollided == false){
+				
+				if (distance < this.radius + secondBall.radius){
+					//move secondBall outside this radius
+				}
+				
 				var thisRadiusSum = (this.radius + secondBall.radius);
 				var thisRadiusDiff = (this.radius - secondBall.radius);
 				var thisXIncr = (this.xIncr * thisRadiusDiff + (2 * secondBall.radius * secondBall.xIncr)) / thisRadiusSum;			

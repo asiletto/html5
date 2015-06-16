@@ -30,13 +30,13 @@ define(["jquery","bouncingBall"], function($, BouncingBall) {
 		
 		this.resizeCanvas();
 		
-		for(x=0;x<5;x++){
+		for(x=0;x<40;x++){
 			this.balls.push( new BouncingBall(
-								(x+1)*100, 
-								(x+1)*100, 
-								self.getRandom(20), 
-								self.getRandom(20),
-								50, 
+								(x+1)*25, 
+								(x+1)*10, 
+								self.getRandom(5), 
+								self.getRandom(5),
+								10, 
 								"red", 
 								"#c0c0c0",
 								this.elementID)
