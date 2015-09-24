@@ -1,0 +1,29 @@
+{
+   "result":{  
+      "code":"success",
+      "type":0,
+      "message":""
+   },
+   "list": [
+		   { "id": "world", "name":"The earth", "coordinates":"24.2553311,39.6744945,3z"},
+            { "id": "AF", "name":"Africa", "parent": "world", "coordinates":"2.3611332,19.2097163,4z"},
+                { "id": "EG", "name":"Egypt", "parent": "AF", "coordinates":"26.8799652,31.878519,6.5z" },
+                { "id": "KE", "name":"Kenya", "parent": "AF", "coordinates":"0.5333663,39.4045435,6.75z" },
+                    { "id": "Nairobi", "name":"Nairobi", "parent": "KE", "coordinates":"-1.2978197,36.843205,13z" },
+                    { "id": "Mombasa", "name":"Mombasa", "parent": "KE", "coordinates":"-4.0511105,39.6830037,13.5z" },
+                { "id": "SD", "name":"Sudan", "parent": "AF", "coordinates":"15.9699358,32.6788567,6.42z" },
+                    { "id": "Khartoum", "name":"Khartoum", "parent": "SD", "coordinates":"15.5976923,32.5631099,11.17z" },
+            { "id": "AS", "name":"Asia", "parent": "world", "coordinates":"28.0675609,103.366435,4.29z" },
+                { "id": "TH", "name":"Thailand", "parent": "AS", "coordinates":"15.4114763,102.8797476,6.54z" },
+					{ "id": "roiet", "name":"Roi-et", "parent": "TH", "coordinates":"16.0476108,103.7044083,11.79z" },
+                { "id": "LA", "name":"Lao", "parent": "AS", "coordinates":"18.53233,105.4483271,7.29z" },
+                { "id": "VT", "name":"Vietnam", "parent": "AS", "coordinates":"20.5117064,107.3511046,7.29z" },
+                { "id": "CB", "name":"Cambodia", "parent": "AS", "coordinates":"12.7480581,106.4766545,7.29z" },
+            { "id": "EU", "name":"Europe", "parent": "world", "coordinates":"48.2108383,20.1042922,5.04z" },
+                { "id": "DE", "name":"Germany", "parent": "EU", "coordinates":"50.4516816,14.8547274,6.29z" },
+                { "id": "FR", "name":"France", "parent": "EU", "coordinates":"46.7625929,5.322889,6.29z" },
+                { "id": "ES", "name":"Spain", "parent": "EU", "coordinates":"39.6162259,-1.2259395,6.29z" },
+            { "id": "NA", "name":"North America", "parent": "world", "coordinates":"32.4228418,-89.6150087,4.5z" },
+            { "id": "SA", "name":"South America", "parent": "world", "coordinates":"-11.1911164,-53.7798343,4.5z" }
+	]
+}
